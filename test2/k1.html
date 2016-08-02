@@ -1,0 +1,19 @@
+<html>
+	<head>
+	<script src="/html/script.js" type="text/javascript"/>
+	function display()
+	{
+		var x = document.getElementByID("i1");
+        var y = document.getElementByID("i2");
+        var z = parseInt(x) + parseInt(y);
+     document.getElementById('i3').value= z;
+ }
+	</script>
+	</head>
+<body>
+number1: <input type="text" id="i1" name="n1"><br>
+number2:   <input type="text" id="i2" name="n2"> <br>
+number3: <input type="text" id="i3"  value=" "><br>
+<button onClick="display()">display</button>
+</body>
+</html>

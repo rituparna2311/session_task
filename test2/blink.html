@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#button {
+    background-color: #4CAF50; /* Green */
+    
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+ 
+}
+
+#button2 {background-color: #008CBA;
+color: white;
+    padding: 15px 32px;
+    text-align: center;
+    
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;} /* Blue */
+#button3 {background-color: #f44336;
+color: white;
+    padding: 15px 32px;
+    text-align: center;
+    
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;} /* Red */
+#button4 {background-color: #e7e7e7; color: black;
+color: white;
+    padding: 15px 32px;
+    text-align: center;
+    
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;} /* Gray */
+#button5 {background-color: #555555;
+color: white;
+    padding: 15px 32px;
+    text-align: center;
+    
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;} /* Black */
+</style>
+<script language= javascript>
+function blink()
+{
+document.getElementById("button").style.visibility="hidden";
+document.getElementById("button2").style.visibility="hidden";
+   document.getElementById("button3").style.visibility="hidden";
+ document.getElementById('button4').style.visibility="hidden";
+document.getElementById('button5').style.visibility="visible";
+}
+function blink1()
+{
+document.getElementById("button").style.visibility="hidden";
+document.getElementById("button2").style.visibility="hidden";
+   document.getElementById("button3").style.visibility="hidden";
+ document.getElementById('button4').style.visibility="visible";
+document.getElementById('button5').style.visibility="hidden";
+}
+function blink2()
+{
+document.getElementById("button").style.visibility="hidden";
+document.getElementById("button2").style.visibility="hidden";
+   document.getElementById("button3").style.visibility="visible";
+ document.getElementById('button4').style.visibility="hidden";
+document.getElementById('button5').style.visibility="hidden";
+}
+function blink3()
+{
+document.getElementById("button").style.visibility="hidden";
+document.getElementById("button2").style.visibility="visible";
+   document.getElementById("button3").style.visibility="hidden";
+ document.getElementById('button4').style.visibility="hidden";
+document.getElementById('button5').style.visibility="hidden";
+}
+function blink4()
+{
+document.getElementById("button").style.visibility="visible";
+document.getElementById("button2").style.visibility="hidden";
+   document.getElementById("button3").style.visibility="hidden";
+ document.getElementById('button4').style.visibility="hidden";
+document.getElementById('button5').style.visibility="hidden";
+}
+var myvar;
+function blink5()
+{
+	document.getElementById("button").style.visibility="hidden";
+document.getElementById("button2").style.visibility="hidden";
+   document.getElementById("button3").style.visibility="hidden";
+ document.getElementById('button4').style.visibility="hidden";
+document.getElementById('button5').style.visibility="hidden";
+	myVar = setInterval(blink4, 1000);
+	myVar = setInterval(blink3, 2000);
+	myVar = setInterval(blink2, 3000);
+	myVar = setInterval(blink1, 4000);
+	myVar = setInterval(blink, 5000);
+myVar = setTimeout(blink5, 6000);
+}
+
+
+</script>
+</head>
+<body onload="blink5()">
+
+
+
+<button id="button">Green</button>
+<button id="button2">Blue</button>
+<button id="button3">Red</button>
+<button id="button4">Gray</button>
+<button id="button5">Black</button>
+
+</body>
+</html>
